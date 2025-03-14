@@ -318,7 +318,7 @@ section {
 /* Tablets and smaller */
 @media (max-width: 768px) {
   .navbar {
-    height: 200px;
+    height: 150px;
   }
   .navbar .flex {
     justify-content: center;
