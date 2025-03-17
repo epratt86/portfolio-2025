@@ -305,9 +305,11 @@ section {
   font-size: 32px;
 }
 
+/* Contact */
 #contact {
   background-color: var(--dark);
   color: var(--light);
+  padding-bottom: 200px;
 }
 
 #contact .grid {
