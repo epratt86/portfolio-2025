@@ -397,4 +397,7 @@ section {
   #contact .card .flex {
     flex-direction: row;
   }
+  .card {
+    padding: 50px 25px;
+  }
 }
