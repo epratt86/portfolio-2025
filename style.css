@@ -241,8 +241,8 @@ section {
   color: var(--dark);
 }
 #skills h2 {
-  text-align: center;
   padding-bottom: 20px;
+  text-align: center;
 }
 #skills img {
   margin-right: 40px;
@@ -250,16 +250,21 @@ section {
   align-self: center;
 }
 #skills .skill p {
-  font-size: 24px;
+  font-size: 32px;
 }
 .skill {
-  margin: 20px 0;
+  margin: 12px 0;
   display: flex;
+  border: 1px solid var(--dark);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 .bullets {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+
+  margin: auto;
 }
 .tags {
   display: flex;
@@ -313,6 +318,9 @@ section {
 .card img {
   padding-right: 8px;
 }
+.icon {
+  padding-bottom: 12px;
+}
 .contact-form {
   background-color: #fff;
   color: var(--dark);
@@ -347,6 +355,9 @@ section {
 
 /* Tablets and smaller */
 @media (max-width: 768px) {
+  section {
+    padding: 100px 20px;
+  }
   .navbar {
     height: 150px;
   }
@@ -380,6 +391,9 @@ section {
   #skills .flex {
     flex-direction: row;
   }
+  #skills .skill p {
+    font-size: 24px;
+  }
   .tags .flex {
     flex-direction: column;
   }
@@ -393,6 +407,7 @@ section {
   .container-lg,
   .container-sm {
     width: 100%;
+    padding: 0;
   }
   #contact .card .flex {
     flex-direction: row;
