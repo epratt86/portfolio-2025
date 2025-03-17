@@ -98,7 +98,8 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 80px;
+  text-transform: uppercase;
 }
 
 p {
@@ -108,6 +109,15 @@ p {
 
 strong {
   font-weight: 600;
+}
+.bordered-text {
+  -webkit-text-stroke: 1px var(--dark);
+  font-size: 80px;
+  color: transparent;
+  text-transform: uppercase;
+}
+.bordered-text.light {
+  -webkit-text-stroke: 1px var(--light);
 }
 
 .hidden {
@@ -271,8 +281,9 @@ section {
   background-color: var(--accent);
   color: #fff;
 }
-#portfolio h2 {
+#portfolio h3 {
   text-align: center;
+  font-size: 32px;
 }
 
 #contact {
@@ -358,6 +369,13 @@ section {
   .flex {
     flex-direction: column;
     width: 100%;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .bordered-text {
+    font-size: 60px;
+    display: block;
   }
   #skills .flex {
     flex-direction: row;
