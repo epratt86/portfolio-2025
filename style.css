@@ -418,12 +418,8 @@ section {
     width: 100%;
   }
 
-  h2 {
-    font-size: 60px;
-  }
-
   .bordered-text {
-    font-size: 60px;
+    font-size: 52px;
     display: block;
   }
 
