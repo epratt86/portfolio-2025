@@ -298,13 +298,61 @@ section {
 
 /* Portfolio */
 #portfolio {
-  background-color: var(--accent);
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--light);
 }
 
-#portfolio h3 {
+#portfolio h2 {
   text-align: center;
-  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+.portfolio-card {
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+
+.overlay-text {
+  color: var(--dark);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.portfolio-card:hover .overlay {
+  width: 100%;
+}
+
+.coming-soon {
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* Contact */
